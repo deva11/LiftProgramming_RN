@@ -1,82 +1,41 @@
 {
-  "_from": "async@0.9.x",
-  "_id": "async@0.9.2",
-  "_inBundle": false,
-  "_integrity": "sha1-rqdNXmHB+JlhO/ZL2mbUx48v0X0=",
-  "_location": "/async",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "async@0.9.x",
-    "name": "async",
-    "escapedName": "async",
-    "rawSpec": "0.9.x",
-    "saveSpec": null,
-    "fetchSpec": "0.9.x"
-  },
-  "_requiredBy": [
-    "/jake"
-  ],
-  "_resolved": "https://registry.npmjs.org/async/-/async-0.9.2.tgz",
-  "_shasum": "aea74d5e61c1f899613bf64bda66d4c78f2fd17d",
-  "_spec": "async@0.9.x",
-  "_where": "/Users/ermanterciyanli/Documents/DevySysLabs/LiftProgram_old/test_folder/node_modules/jake",
-  "author": {
-    "name": "Caolan McMahon"
-  },
-  "bugs": {
-    "url": "https://github.com/caolan/async/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Higher-order functions and common patterns for asynchronous code",
-  "devDependencies": {
-    "lodash": ">=2.4.1",
-    "nodelint": ">0.0.0",
-    "nodeunit": ">0.0.0",
-    "uglify-js": "1.2.x"
-  },
-  "homepage": "https://github.com/caolan/async#readme",
-  "jam": {
-    "main": "lib/async.js",
-    "include": [
-      "lib/async.js",
-      "README.md",
-      "LICENSE"
-    ],
-    "categories": [
-      "Utilities"
-    ]
-  },
-  "keywords": [
-    "async",
-    "callback",
-    "utility",
-    "module"
-  ],
-  "license": "MIT",
-  "main": "lib/async.js",
-  "name": "async",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/caolan/async.git"
-  },
+  "name": "LiftProgram",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "nodeunit test/test-async.js"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
   },
-  "spm": {
-    "main": "lib/async.js"
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/core": "^5.12.3",
+    "@react-navigation/native": "^5.7.3",
+    "@react-navigation/stack": "^5.9.0",
+    "@wdio/cli": "^6.4.0",
+    "react": "16.13.1",
+    "react-native": "0.63.2",
+    "react-native-gesture-handler": "^1.7.0",
+    "react-native-reanimated": "^1.13.0",
+    "react-native-safe-area-context": "^3.1.4",
+    "react-native-screens": "^2.10.1",
+    "react-navigation-slide-from-right-transition": "^1.0.4",
+    "webdriverio": "^6.4.0"
   },
-  "version": "0.9.2",
-  "volo": {
-    "main": "lib/async.js",
-    "ignore": [
-      "**/.*",
-      "node_modules",
-      "bower_components",
-      "test",
-      "tests"
-    ]
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/runtime": "^7.11.2",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.3.0",
+    "detox": "^17.3.6",
+    "eslint": "^7.6.0",
+    "jest": "^26.4.0",
+    "metro-react-native-babel-preset": "^0.62.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }
